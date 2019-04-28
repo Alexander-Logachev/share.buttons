@@ -1,6 +1,6 @@
 # Share Buttons [![npm](https://img.shields.io/npm/v/share-buttons.svg)](https://www.npmjs.com/package/share-buttons) ![license](https://img.shields.io/github/license/wcoder/share-buttons.svg)
 
-Simple, powerful, customizable and super lightweight (1 Kb Gzip) social buttons for your site.
+Simple, powerful, customizable and lightweight social buttons for your site.
 
 ## [Demo](https://github.com/Alexander-Logachev/share-buttons)
 
@@ -22,10 +22,27 @@ NPM:
 npm i share-buttons
 ```
 
-include `share-buttons.js` in the end of page:
+##Usage
 
-``` html
-<script src="<path>/dist/share-buttons.js"></script>
+AMD module:
+
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<script src="../src/share-buttons.js"></script>
+<script>
+    require(['ShareButtons'], function (ShareButtons) {
+         new ShareButtons();
+    });
+</script>
+```
+
+Browser globals:
+
+```
+<script src="../src/share-buttons.js"></script>
+<script>
+    new ShareButtons();
+</script>
 ```
 
 Paste this html on the page:
@@ -54,7 +71,20 @@ Added styles:
 }
 ```
 
-Profit!!
+Options:
+
+Parameters        | Description
+---------------|---------------
+elementID      | id or class of element (by default `.share-btn`)
+erroMsgFunc    | callback on error event
+
+Example:
+
+```
+new ShareButtons({elementID: '.js-share-buttons' ,erroMsgFunc: function (msg) {
+    console.log(msg);
+}});
+``` 
 
 ## Share via
 
