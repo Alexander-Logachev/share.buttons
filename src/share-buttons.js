@@ -21,10 +21,14 @@
      * Class to display the buttons of social networks.
      *
      * @author Alexander Logachev
-     * @version 1.2
+     * @version 1.0
      * @license MIT
      */
     function ShareButtons(data) {
+
+        if (!(this instanceof ShareButtons)) {
+            return new ShareButtons(data);
+        }
 
         var def = {
             elementID: '.share-btn',
