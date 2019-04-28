@@ -1,0 +1,54 @@
+{
+  "name": "share-buttons",
+  "version": "1.0.0",
+  "description": "Simple social buttons for your site.",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wcoder/share-buttons.git"
+  },
+  "author": "Alexander Logachev <alex@logachev.pro>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wcoder/share-buttons/issues"
+  },
+  "homepage": "https://wcoder.github.io/share-buttons",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-uglify": "^3.0.1",
+    "comeon": "git+https://github.com/avgaltsev/comeon.git"
+  },
+  "main": "dist/share-buttons.js",
+  "dependencies": {},
+  "keywords": [
+    "social",
+    "buttons",
+    "share",
+    "fontawesome",
+    "facebook",
+    "vk",
+    "twitter",
+    "telegram",
+    "skype",
+    "linkedin",
+    "pinterest",
+    "pocket",
+    "reddit",
+    "evernote",
+    "whatsapp",
+    "odnoklassniki",
+    "tumblr",
+    "hackernews",
+    "xing",
+    "email",
+    "print",
+    "vider",
+    "Мой мир",
+    "livejournal"
+  ]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+
+    <title>Test page for sharing</title>
+    <meta name="description" content="Page description"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        /* Few styles :) */
+        .share-btn > a {
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 12px;
+            font-family: Verdana, Arial;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .share-btn > a:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<p>Share this page with:</p>
+
+<!-- data-url="" data-title="" data-desc="" -->
+
+
+<div class="share-btn" data-url="http://logachev.pro">
+    <a class="btn-vk" data-id="vk"><i class="fab fa-vk"></i> VK</a>
+    <a class="btn-facebook" data-id="fb"><i class="fab fa-facebook-square"></i> Facebook</a>
+    <a class="btn-twitter" data-id="tw"><i class="fab fa-twitter"></i> Twitter</a>
+    <a class="btn-telegram" data-id="tg"><i class="fab fa-telegram"></i> Telegram</a>
+    <a class="btn-pocket" data-id="pk"><i class="fab fa-get-pocket"></i> Pocket</a>
+    <a class="btn-reddit" data-id="re"><i class="fab fa-reddit"></i> Reddit</a>
+    <a class="btn-evernote" data-id="ev"><i class="far fa-sticky-note"></i> Evernote</a>
+    <a class="btn-linkedin" data-id="in"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a class="btn-pinterest" data-id="pi"><i class="fab fa-pinterest"></i> Pinterest</a>
+    <a class="btn-skype" data-id="sk"><i class="fab fa-skype"></i> Skype</a>
+    <a class="btn-whatsapp" data-id="wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a class="btn-ok" data-id="ok"><i class="fab fa-odnoklassniki"></i> Odnoklassniki</a>
+    <a class="btn-tumblr" data-id="tu"><i class="fab fa-tumblr"></i> Tumblr</a>
+    <a class="btn-hn" data-id="hn"><i class="fab fa-hacker-news"></i> Hacker News</a>
+    <a class="btn-xing" data-id="xi"><i class="fab fa-xing"></i> Xing</a>
+    <a class="btn-mail" data-id="mail"><i class="fas fa-at"></i> EMail</a>
+    <a class="btn-print" data-id="print"><i class="fas fa-print"></i> Print</a>
+
+    <a class="btn-print" data-id="viber"><i class="fab fa-viber"></i> Viber</a>
+    <a class="btn-print" data-id="my"><i class="fab fa-mailchimp"></i> Мой мир</a>
+    <a class="btn-print" data-id="lj"><i class="fas fa-journal-whills"></i> livejournal</a>
+    <a class="btn-print" data-id="fav"><i class="far fa-star"></i> Add to favorite</a>
+</div>
+
+<!--AMD-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<script src="../src/share-buttons.js"></script>
+<script>
+    require(['ShareButtons'], function (ShareButtons) {
+         new ShareButtons({erroMsgFunc: function (msg) {
+            console.log(msg);
+        }});
+    });
+</script>-->
+
+<!--Node, CommonJS-like-->
+<!--<script src="../node_modules/comeon/comeon.js"></script>-->
+<!--<script src="../src/share-buttons.js"></script>
+<script>
+    new ShareButtons();
+</script>-->
+
+<!--Browser globals (root is window)-->
+<script src="../src/share-buttons.js"></script>
+<script>
+    new ShareButtons();
+</script>
+
+</body>
+</html>
