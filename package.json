@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wcoder/share-buttons.git"
+    "url": "git+https://github.com/Alexander-Logachev/share.buttons.git"
   },
   "author": "Alexander Logachev <alex@logachev.pro>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wcoder/share-buttons/issues"
+    "url": "https://github.com/Alexander-Logachev/share.buttons/issues"
   },
-  "homepage": "https://wcoder.github.io/share-buttons",
+  "homepage": "https://alexander-logachev.github.io/share.buttons/",
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-uglify": "^3.0.1",
