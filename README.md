@@ -2,7 +2,7 @@
 
 Simple, powerful, customizable and lightweight social buttons for your site.
 
-## [Demo](https://github.com/Alexander-Logachev/share-buttons)
+## [Demo](https://alexander-logachev.github.io/share.buttons/)
 
 ## Browser support
 
